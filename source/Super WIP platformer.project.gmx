@@ -8,6 +8,8 @@
   <sprites name="sprites">
     <sprite>sprites\spr_solid</sprite>
     <sprite>sprites\spr_player</sprite>
+    <sprite>sprites\spr_playerdmg</sprite>
+    <sprite>sprites\spr_playerdie</sprite>
     <sprite>sprites\spr_playerjump</sprite>
     <sprite>sprites\spr_playerslide</sprite>
     <sprite>sprites\spr_playerfall</sprite>
@@ -15,6 +17,11 @@
     <sprite>sprites\spr_playerattack1</sprite>
     <sprite>sprites\spr_playerattack2</sprite>
     <sprite>sprites\spr_playerattack3</sprite>
+    <sprite>sprites\spr_playerslam</sprite>
+    <sprite>sprites\enemy_1</sprite>
+    <sprite>sprites\enemy_1_dead</sprite>
+    <sprite>sprites\enemy_2</sprite>
+    <sprite>sprites\enemy_2_dead</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -30,6 +37,8 @@
     <object>objects\obj_playerattack3</object>
     <object>objects\obj_playerattack3mirror</object>
     <object>objects\obj_player</object>
+    <object>objects\obj_enemy1</object>
+    <object>objects\obj_enemy2</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
