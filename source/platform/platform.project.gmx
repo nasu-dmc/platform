@@ -35,16 +35,10 @@
   </fonts>
   <objects name="objects">
     <object>objects\obj_solid</object>
-    <object>objects\obj_playerattack</object>
-    <object>objects\obj_playerattackmirror</object>
-    <object>objects\obj_playerattack2</object>
-    <object>objects\obj_playerattack2mirror</object>
-    <object>objects\obj_playerattack3</object>
-    <object>objects\obj_playerattack3mirror</object>
     <object>objects\obj_player</object>
     <object>objects\obj_enemy1</object>
     <object>objects\obj_enemy2</object>
-    <object>objects\obj_debri1</object>
+    <object>objects\obj_debris</object>
     <object>objects\obj_dmgfloor</object>
   </objects>
   <rooms name="rooms">
