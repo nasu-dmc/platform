@@ -36,6 +36,9 @@ fric = 0.5 //friction
 jumps = 0; 
 jumps_max = 2; 
 
+walljumps = 0 
+walljumps_max = 10;
+
 attack = false; 
 
 image_speed = 0.25;
@@ -104,17 +107,21 @@ if (ysp &lt; 10) {
 if (place_meeting(x, y+1, obj_solid)) //player is meeting the floor
 {
     jumps = jumps_max;
+    walljumps = walljumps_max;
 }
 
-if (key_j &amp;&amp; jumps&gt;0) {
- if ((place_meeting(x+1, y, obj_solid) &amp;&amp; key_r) || (place_meeting(x-1, y, obj_solid) &amp;&amp; key_l)) { //walljump
-    ysp = -jsp;
-    jumps -= 1;
-    xsp += -move_sign * 5;
-    } else {
+if (key_j) {
+    if(jumps&gt;0) { 
     ysp = -jsp; //jump 
     jumps -=1;
     }
+    if (walljumps &gt; 0) {
+    if ((place_meeting(x+1, y, obj_solid) &amp;&amp; key_r) || (place_meeting(x-1, y, obj_solid) &amp;&amp; key_l)) { //walljump
+    ysp = -jsp;
+    xsp += -move_sign * 5;
+    } 
+    }
+
 }
 
 
@@ -205,9 +212,14 @@ if (xsp = 0)
     image_speed = 0.1;
     }
     
-if (ysp &lt; 0)
+if (jumps = 1) //one jump
     {
     sprite_index = spr_playerjump;
+    } 
+    
+if (jumps = 2) //double jump 
+    {
+    //put sprite index here
     }
     
 if (ysp &gt;= 0 &amp;&amp; (!place_meeting(x, y+1, obj_solid)))
@@ -223,7 +235,7 @@ if (!place_meeting(x, y+1, obj_solid)&amp;&amp; (ysp &gt;= 7)) {
         
         }
     
-    else if (place_meeting(x-1, y, obj_solid) &amp;&amp; (-key_l))
+    if (place_meeting(x-1, y, obj_solid) &amp;&amp; (key_l))
         {
       
             sprite_index = spr_playerslide;
