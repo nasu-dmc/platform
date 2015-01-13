@@ -219,7 +219,6 @@ if (jumps = 1) //one jump
     
 if (jumps = 2) //double jump 
     {
-    //put sprite index here
     }
     
 if (ysp &gt;= 0 &amp;&amp; (!place_meeting(x, y+1, obj_solid)))

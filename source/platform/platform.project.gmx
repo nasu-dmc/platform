@@ -24,9 +24,12 @@
     <sprite>sprites\enemy_2</sprite>
     <sprite>sprites\enemy_2_dead</sprite>
     <sprite>sprites\spr_debri2</sprite>
+    <sprite>sprites\spr_debrimelt2</sprite>
     <sprite>sprites\spr_debri1</sprite>
+    <sprite>sprites\spri_debrimelt1</sprite>
     <sprite>sprites\spr_debridmg</sprite>
     <sprite>sprites\spr_levelblock</sprite>
+    <sprite>sprites\spr_lvlexit</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -40,9 +43,14 @@
     <object>objects\obj_enemy2</object>
     <object>objects\obj_debris</object>
     <object>objects\obj_dmgfloor</object>
+    <object>objects\obj_lvlexit</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
+    <room>rooms\level1</room>
+    <room>rooms\level2</room>
+    <room>rooms\level3</room>
+    <room>rooms\level4</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
