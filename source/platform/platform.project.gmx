@@ -38,15 +38,25 @@
   </fonts>
   <objects name="objects">
     <object>objects\obj_solid</object>
-    <object>objects\obj_player</object>
-    <object>objects\obj_enemy1</object>
-    <object>objects\obj_enemy2</object>
     <object>objects\obj_debris</object>
     <object>objects\obj_dmgfloor</object>
     <object>objects\obj_lvlexit</object>
+    <object>objects\obj_enemy1</object>
+    <objects name="enemy">
+      <object>objects\obj_enemy2</object>
+    </objects>
+    <objects name="player">
+      <object>objects\obj_playerattackmirror</object>
+      <object>objects\obj_punchwave1</object>
+      <object>objects\obj_playerattack</object>
+      <object>objects\obj_playerattack2</object>
+      <object>objects\obj_playerattack2mirror</object>
+      <object>objects\obj_playerattack3</object>
+      <object>objects\obj_playerattack3mirror</object>
+      <object>objects\obj_player</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
     <room>rooms\level1</room>
     <room>rooms\level2</room>
     <room>rooms\level3</room>

@@ -211,7 +211,7 @@ view_yview[0] += ((y-(view_wview[0]/3.4)) - view_yview[0]) * 0.13;
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>obj_player</object>
+            <object>-100</object>
           </argument>
           <argument>
             <kind>0</kind>
