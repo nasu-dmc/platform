@@ -36,10 +36,12 @@ fric = 0.5 //friction
 jumps = 0; 
 jumps_max = 2; 
 
-walljumps = 0 
+walljumps = 0;
 walljumps_max = 10;
 
 attack = false; 
+
+face = 1;
 
 image_speed = 0.25;
 
@@ -66,7 +68,30 @@ image_speed = 0.25;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Player input
+            <string>///Camera
+view_xview[0] += ((x-(view_wview[0]/2)) - view_xview[0]) * 0.13;
+view_yview[0] += ((y-(view_wview[0]/3.4)) - view_yview[0]) * 0.13;
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Player input
 var key_r = keyboard_check(vk_right); //1 or 0 
 var key_l = keyboard_check(vk_left); //1 or 0, since left is negative x direction
 var key_j = keyboard_check_pressed(vk_space); // 1 or 0
@@ -116,11 +141,14 @@ if (key_j) {
     jumps -=1;
     }
     if (walljumps &gt; 0) {
-    if ((place_meeting(x+1, y, obj_solid) &amp;&amp; key_r) || (place_meeting(x-1, y, obj_solid) &amp;&amp; key_l)) { //walljump
-    ysp = -jsp;
-    xsp += -move_sign * 5;
+    if ((place_meeting(x+1, y, obj_solid))|| (place_meeting(x-1, y, obj_solid))) { //walljump
+        walljumps -= 1;
+        jumps = jumps_max;
+        ysp = -jsp;
+        xsp += -move_sign * 5;
+        }
     } 
-    }
+    
 
 }
 
@@ -146,6 +174,16 @@ if (place_meeting(x, y+ysp, obj_solid)) //if range between solid and player is l
 
 x += xsp;
 y += ysp; 
+
+//face check for animations
+if (xsp &gt; 0) {
+    face = 1; //right
+} else if (xsp &lt; 0) {
+    face = 0; //left
+}
+
+
+
 </string>
           </argument>
         </arguments>
@@ -166,9 +204,13 @@ y += ysp;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Camera
-view_xview[0] += ((x-(view_wview[0]/2)) - view_xview[0]) * 0.13;
-view_yview[0] += ((y-(view_wview[0]/3.4)) - view_yview[0]) * 0.13;
+            <string>//Attack
+
+if (attack == false) {
+    if (key_a) { 
+        attack = true;
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -191,18 +233,22 @@ view_yview[0] += ((y-(view_wview[0]/3.4)) - view_yview[0]) * 0.13;
             <kind>1</kind>
             <string>///Animations
 
-if (xsp &gt; 0)
-    {
-    sprite_index = spr_playermove;
+if (face = 1) {
     image_xscale = 1;
+}
+if (face = 0) {
+    image_xscale = -1;
+}
+
+if (attack = true) {
+    sprite_index = spr_playerattack1;
     image_speed = 0.45;
-    }
- 
-    
-if (xsp &lt; 0)
+}
+
+if (xsp != 0)
     {
     sprite_index = spr_playermove;
-    image_xscale = -1;
+    //image_xscale = 1;
     image_speed = 0.45;
     }
 
@@ -242,6 +288,8 @@ if (!place_meeting(x, y+1, obj_solid)&amp;&amp; (ysp &gt;= 7)) {
 
         }
     }
+    
+
 </string>
           </argument>
         </arguments>
