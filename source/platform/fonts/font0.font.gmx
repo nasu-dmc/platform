@@ -3,7 +3,6 @@
   <name>Arial</name>
   <size>12</size>
   <bold>0</bold>
-  <renderhq>0</renderhq>
   <italic>0</italic>
   <charset>1</charset>
   <aa>3</aa>
@@ -37,9 +36,9 @@
     <glyph character="114" x="232" y="42" w="4" h="15" shift="5" offset="1"/>
     <glyph character="57" x="20" y="42" w="7" h="15" shift="9" offset="1"/>
     <glyph character="98" x="83" y="42" w="7" h="15" shift="9" offset="1"/>
-    <glyph character="97" x="29" y="42" w="7" h="15" shift="9" offset="1"/>
-    <glyph character="107" x="180" y="22" w="8" h="15" shift="8" offset="1"/>
     <glyph character="79" x="175" y="2" w="10" h="15" shift="12" offset="1"/>
+    <glyph character="107" x="180" y="22" w="8" h="15" shift="8" offset="1"/>
+    <glyph character="97" x="29" y="42" w="7" h="15" shift="9" offset="1"/>
     <glyph character="46" x="79" y="62" w="1" h="15" shift="4" offset="2"/>
     <glyph character="38" x="187" y="2" w="10" h="15" shift="11" offset="1"/>
     <glyph character="100" x="74" y="42" w="7" h="15" shift="9" offset="1"/>

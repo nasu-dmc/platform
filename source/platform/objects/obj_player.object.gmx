@@ -3,7 +3,7 @@
   <spriteName>spr_player</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-4</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -143,7 +143,7 @@ if (key_j) {
     if (walljumps &gt; 0) {
     if ((place_meeting(x+1, y, obj_solid))|| (place_meeting(x-1, y, obj_solid))) { //walljump
         walljumps -= 1;
-        jumps = jumps_max;
+        jumps = 1;
         ysp = -jsp;
         xsp += -move_sign * 5;
         }
@@ -160,6 +160,7 @@ if (place_meeting(x+xsp, y, obj_solid)) //if range between wall and player is le
         x += sign(xsp); //keep moving
     }   
     xsp = 0; //once not 1 pixel, stop
+    
 }
 
 
@@ -184,33 +185,6 @@ if (xsp &gt; 0) {
 
 
 
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>//Attack
-
-if (attack == false) {
-    if (key_a) { 
-        attack = true;
-    }
-}
 </string>
           </argument>
         </arguments>
@@ -263,8 +237,10 @@ if (jumps = 1) //one jump
     sprite_index = spr_playerjump;
     } 
     
-if (jumps = 2) //double jump 
+if (jumps = 0) //double jump 
     {
+    sprite_index = spr_playerslam;
+    image_speed = 1;
     }
     
 if (ysp &gt;= 0 &amp;&amp; (!place_meeting(x, y+1, obj_solid)))
@@ -289,6 +265,104 @@ if (!place_meeting(x, y+1, obj_solid)&amp;&amp; (ysp &gt;= 7)) {
         }
     }
     
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_dmgfloor">
+      <action>
+        <libid>1</libid>
+        <id>104</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_set_vspeed</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>-1</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_debri1">
+      <action>
+        <libid>1</libid>
+        <id>103</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_set_hspeed</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>-1</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="88">
+      <action>
+        <libid>1</libid>
+        <id>203</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_kill_object</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>other</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (face = 1 &amp;&amp; jumps = 2 &amp;&amp; ysp = 0)
+    {
+    instance_destroy();
+     action_create_object_motion(obj_playerattack,x,y,5,0);    
+    }
+
+if (face = 0 &amp;&amp; jumps = 2 &amp;&amp; ysp = 0)
+    {
+    instance_destroy();
+     action_create_object_motion(obj_playerattack,x,y,-5,0);     
+    }
+
+if (ysp != 0 || jumps &lt; 2)
+    {
+    instance_destroy();
+     action_create_object_motion(obj_playerslam,x,y,-5,90);
+    }
 
 </string>
           </argument>
