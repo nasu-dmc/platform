@@ -25,12 +25,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// set variables
+            <string>///Initialize Variables
 grav = 0.5;
-spd = 5;
-hspd = 4;
-vspd = 0;
-fric = .5;
+xsp = 0;
+ysp = 0;
+msp = 5; //move speed
+fric = 0.5 //friction
+
+
 
 </string>
           </argument>
@@ -86,48 +88,36 @@ if(hspeed = -6)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///platform stuff
-//groundcheck
-if (place_meeting(x, y+1, obj_solid))
+            <string>///Static forces
+//Gravity
+if (ysp &lt; 10) {
+    ysp += grav;
+    if (ysp &gt; 1)
+        ysp *= 1.05;
+}; 
+
+//Horizontal Collision 
+if (place_meeting(x+xsp, y, obj_solid)) //if range between wall and player is less than speed 
 {
-    vspd = 0;
-    
-} 
-else
-{
-    //gravity
-    {
-       vspd += grav;
+    while(!(place_meeting(x+sign(xsp), y, obj_solid))) { //while not 1 pixel away from wall  
+        x += sign(xsp); //keep moving
     }   
-
-    if ( vspd &gt;1)
-        vspd = vspd*1.05;      
+    xsp = 0; //once not 1 pixel, stop
+    
 }
- 
 
-// Horizontal collisions (no clipping into walls)
-if (place_meeting(x+hspd, y, obj_solid))
+
+//Vertical Collision 
+if (place_meeting(x, y+ysp, obj_solid)) //if range between solid and player is less than speed 
 {
-    while(!place_meeting(x+sign(hspd), y, obj_solid))
-    {
-        x+= sign(hspd);
-    }
-    hspd = 0;
+    while(!(place_meeting(x, y+sign(ysp), obj_solid))) { //until 1 pixel away 
+        y += sign(ysp); //keep moving up
+    }   
+    ysp = 0; //once not 1 pixel, stop
 }
 
-// Vertical collisions (no clipping into walls)
-if (place_meeting (x, y+vspd, obj_solid))
-{
-    while(!place_meeting(x, y+sign(vspd), obj_solid))
-    {
-        y+= sign(vspd);
-    }
-    vspd = 0;
-}
-
-
-//vertical movement
-y += vspd;
+x += xsp;
+y += ysp; 
 
 
 
@@ -156,7 +146,7 @@ y += vspd;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///camera
+            <string>///Camera
 view_xview[0] += ((x-(view_wview[0]/2)) - view_xview[0]) * 0.13;
 view_yview[0] += ((y-(view_wview[0]/3.4)) - view_yview[0]) * 0.13;
 </string>

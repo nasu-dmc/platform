@@ -86,29 +86,6 @@ view_yview[0] += ((y-(view_wview[0]/3.4)) - view_yview[0]) * 0.3;
 var key_r = keyboard_check(vk_right); //1 or 0 
 var key_l = keyboard_check(vk_left); //1 or 0, since left is negative x direction
 
-//Movement
-move_sign = (-key_l + key_r);
-move = move_sign * msp;   
-if (xsp != move) {
- if (xsp &lt; move ){
-    xsp += fric;  
- }else if (xsp &gt; move) {
-    xsp -= fric; 
- }
- }else if (move = 0)
-{
-    if(xsp !=0)
-    {
-        if(xsp &lt;0)
-        {
-            xsp += fric;
-        }
-            else
-            {
-                xsp -= fric;
-            }
-    }
-}
 
 //Gravity
 if (ysp &lt; 10) {
@@ -167,12 +144,12 @@ y += ysp;
             <kind>1</kind>
             <string>///animation
 
-if(xsp &gt;= 1)
+if(face = 1)
     {
     image_xscale = 1
     }
 
-if(xsp &lt;= -1)
+if(face = 0)
     {
     image_xscale = -1
     }

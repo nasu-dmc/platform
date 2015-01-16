@@ -41,6 +41,8 @@ walljumps_max = 10;
 
 attack = false; 
 
+globalvar face;
+
 face = 1;
 
 image_speed = 0.25;
@@ -358,7 +360,7 @@ if (face = 0 &amp;&amp; jumps = 2 &amp;&amp; ysp = 0)
      action_create_object_motion(obj_playerattack,x,y,-5,0);     
     }
 
-if (ysp != 0 || jumps &lt; 2)
+if (ysp &gt; 1 || jumps &lt; 2)
     {
     instance_destroy();
      action_create_object_motion(obj_playerslam,x,y,-5,90);
