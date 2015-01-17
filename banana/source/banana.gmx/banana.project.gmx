@@ -9,6 +9,9 @@
     <sprite>sprites\enemy_1</sprite>
     <sprite>sprites\enemy_1_dead</sprite>
     <sprite>sprites\enemy_2</sprite>
+    <sprite>sprites\spr_infection</sprite>
+    <sprite>sprites\spr_movingplate</sprite>
+    <sprite>sprites\spr_core</sprite>
     <sprite>sprites\enemy_2_dead</sprite>
     <sprite>sprites\spr_startgame</sprite>
     <sprite>sprites\spr_title</sprite>
@@ -17,15 +20,16 @@
       <sprite>sprites\spr_playerslam</sprite>
       <sprite>sprites\spr_player</sprite>
       <sprite>sprites\spr_playerslammed</sprite>
-      <sprite>sprites\spr_playerdmg</sprite>
-      <sprite>sprites\spr_playerdie</sprite>
-      <sprite>sprites\spr_playerslide</sprite>
+      <sprite>sprites\spr_punchwave1</sprite>
       <sprite>sprites\spr_playerattack2</sprite>
-      <sprite>sprites\spr_playerattack3</sprite>
-      <sprite>sprites\spr_playerattack1</sprite>
-      <sprite>sprites\spr_playermove</sprite>
       <sprite>sprites\spr_playerfall</sprite>
+      <sprite>sprites\spr_playerattack1</sprite>
+      <sprite>sprites\spr_playerdmg</sprite>
       <sprite>sprites\spr_playerjump</sprite>
+      <sprite>sprites\spr_playerdie</sprite>
+      <sprite>sprites\spr_playerattack3</sprite>
+      <sprite>sprites\spr_playerslide</sprite>
+      <sprite>sprites\spr_playermove</sprite>
     </sprites>
     <sprites name="environment">
       <sprite>sprites\spr_pasokon</sprite>
@@ -54,7 +58,6 @@
       <object>objects\obj_playerattack</object>
       <object>objects\obj_player</object>
       <object>objects\obj_playerslammed</object>
-      <object>objects\obj_playerslammedmirror</object>
       <object>objects\obj_playerdead</object>
       <object>objects\obj_playerslam</object>
     </objects>
@@ -74,6 +77,11 @@
       <object>objects\obj_debridmg</object>
       <object>objects\obj_debri1</object>
     </objects>
+    <object>objects\obj_core</object>
+    <object>objects\obj_deathblock</object>
+    <object>objects\obj_infection</object>
+    <object>objects\obj_movingplate</object>
+    <object>objects\obj_pasokon</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\menu</room>
@@ -84,6 +92,8 @@
     <room>rooms\level4</room>
     <room>rooms\level5</room>
     <room>rooms\level6</room>
+    <room>rooms\level7</room>
+    <room>rooms\level8</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
