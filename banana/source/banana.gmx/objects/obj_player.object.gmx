@@ -31,7 +31,7 @@ xsp = 0;
 ysp = 0;
 jsp = 7; //jump speed
 msp = 5; //move speed
-fric = 0.5 //friction
+fric = 0.25 //friction
 
 jumps = 0; 
 jumps_max = 2; 
@@ -48,6 +48,29 @@ face = 1;
 image_speed = 0.25;
 
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>speed = 0
 </string>
           </argument>
         </arguments>
@@ -268,6 +291,50 @@ if (!place_meeting(x, y+1, obj_solid)&amp;&amp; (ysp &gt;= 7)) {
     }
     
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///dmg
+
+
+
+if place_meeting(x-1,y,obj_enemy1)
+    {
+    speed = 8;
+    alarm[0] = 7
+    }
+if place_meeting(x+2,y,obj_enemy1)
+    {
+    speed = -8;
+    alarm[0] = 7
+    }
+if place_meeting(x-1,y,obj_enemy2)
+    {
+    speed = 8;
+    alarm[0] = 7
+    }
+if place_meeting(x+2,y,obj_enemy2)
+    {
+    speed = -8
+    alarm[0] = 7
+    }
 </string>
           </argument>
         </arguments>

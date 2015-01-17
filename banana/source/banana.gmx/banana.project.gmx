@@ -62,7 +62,6 @@
       <object>objects\obj_playerslam</object>
     </objects>
     <object>objects\obj_enemy1</object>
-    <object>objects\obj_enemy2</object>
     <object>objects\obj_start</object>
     <object>objects\obj_brief</object>
     <object>objects\obj_title</object>
@@ -82,6 +81,7 @@
     <object>objects\obj_infection</object>
     <object>objects\obj_movingplate</object>
     <object>objects\obj_pasokon</object>
+    <object>objects\obj_enemy2</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\menu</room>
@@ -94,6 +94,8 @@
     <room>rooms\level6</room>
     <room>rooms\level7</room>
     <room>rooms\level8</room>
+    <room>rooms\level9</room>
+    <room>rooms\level10</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
