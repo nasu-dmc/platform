@@ -98,7 +98,7 @@ chasing = false;
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>obj_enemy2dead</object>
+            <object>-100</object>
           </argument>
           <argument>
             <kind>0</kind>
