@@ -311,8 +311,8 @@
     <instance objName="obj_solid" x="960" y="512" name="inst_D8A5AC2E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="928" y="512" name="inst_DED93974" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player" x="64" y="224" name="inst_4FB3D8E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="pasokon" x="160" y="224" name="inst_8C160B1B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lvlexit" x="960" y="672" name="inst_C34F6543" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_pasokon" x="128" y="224" name="inst_18ADAEBB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_floor" x="32" y="288" w="32" h="32" xo="0" yo="0" id="10000201" name="inst_45F9119D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
