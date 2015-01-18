@@ -3,7 +3,7 @@
   <spriteName>enemy_2_dead</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-2</depth>
+  <depth>-3</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -50,7 +50,7 @@
             <kind>1</kind>
             <string>image_speed = 0;
 
-image_index = 30;
+image_index = 10;
 </string>
           </argument>
         </arguments>

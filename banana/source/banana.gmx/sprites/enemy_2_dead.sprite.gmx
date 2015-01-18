@@ -30,5 +30,6 @@
     <frame index="7">images\enemy_2_dead_7.png</frame>
     <frame index="8">images\enemy_2_dead_8.png</frame>
     <frame index="9">images\enemy_2_dead_9.png</frame>
+    <frame index="10">images\enemy_2_dead_10.png</frame>
   </frames>
 </sprite>

@@ -3,7 +3,7 @@
   <spriteName>enemy_1</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-2</depth>
+  <depth>-3</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -115,18 +115,7 @@ chasing = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-if (speed &gt; 0)
-    {
-    speed -= 8
-    }
-
-if (speed &lt; 0)
-    {
-    speed += 8
-    }
-
-
+            <string>speed =0;
 </string>
           </argument>
         </arguments>
@@ -230,6 +219,11 @@ if (chasing == true)
 
 if (hp &lt;= 0)
     instance_destroy();
+    
+if instance_exists(obj_playerdmg)
+    {
+    xsp *= 0.5;
+    }
 
 
 </string>
