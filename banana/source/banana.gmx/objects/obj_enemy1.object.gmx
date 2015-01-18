@@ -3,7 +3,7 @@
   <spriteName>enemy_1</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-2</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -26,10 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>///Initialize Variables
+///Initialize Variables
 grav = 0.5;
+xsp = 0;
 ysp = 0;
-xsp= 0;
-hp = 5;
+hp = 10;
 
 
 
@@ -115,12 +116,12 @@ chasing = false;
           <argument>
             <kind>1</kind>
             <string>
-if (image_xscale = 1)
+if (speed &gt; 0)
     {
     speed -= 8
     }
 
-if (image_xscale = -1)
+if (speed &lt; 0)
     {
     speed += 8
     }
@@ -155,6 +156,7 @@ if (ysp &lt; 10) {
     if (ysp &gt; 1)
         ysp *= 1.05;
 }; 
+
 
 
 //Horizontal Collision 
@@ -201,25 +203,26 @@ y += ysp;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if distance_to_object(obj_player) &lt; 125
+            <string>if distance_to_object(obj_player) &lt; 75
     {
     chasing = true;
     }
 
 
+
 if (chasing == true)
     {
-    if instance_exists(obj_player)
+    if instance_exists(obj_player) 
         {
         if x &lt; obj_player.x
             {
             image_xscale = -1;
-            xsp = 2;
+            xsp = 4;
             }
         else if x &gt; obj_player.x
             {
             image_xscale = 1;
-            xsp = -2;
+            xsp = -4;
             }
         }
     }
@@ -256,13 +259,13 @@ alarm[0] = 5;
 
 if (image_xscale = 1)
     {
-    xsp = 10;
+    xsp = 5;
     
     }
 
 if (image_xscale = -1)
     {
-    xsp = -10;
+    xsp = -5;
     }
 
 
@@ -293,13 +296,13 @@ alarm[0] = 5;
 
 if (image_xscale = 1)
     {
-    xsp = 6;
+    xsp = 2;
     
     }
 
 if (image_xscale = -1)
     {
-    xsp = -6;
+    xsp = -2;
     }
 
 
@@ -330,13 +333,13 @@ alarm[0] = 5;
 
 if (image_xscale = 1)
     {
-    xsp = 10;
+    xsp = 5;
     
     }
 
 if (image_xscale = -1)
     {
-    xsp = -10;
+    xsp = -5;
     }
 
 
@@ -367,13 +370,13 @@ alarm[0] = 5;
 
 if (image_xscale = 1)
     {
-    xsp = 8;
+    xsp = 3;
     
     }
 
 if (image_xscale = -1)
     {
-    xsp = -8;
+    xsp = -3;
     }
 
 

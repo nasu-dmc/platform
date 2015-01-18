@@ -60,8 +60,11 @@ image_speed = 1;
           <argument>
             <kind>1</kind>
             <string>///Camera
-view_xview[0] += ((x-(view_wview[0]/2)) - view_xview[0]) * 0.3;
-view_yview[0] += ((y-(view_wview[0]/3.4)) - view_yview[0]) * 0.3;
+view_xview[0] += ((x-(view_wview[0]/2)) - view_xview[0]) * 0.1;
+view_yview[0] += ((y-(view_hview[0]/2)) - view_yview[0]) * 0.1;
+
+view_xview[0] = clamp(view_xview[0] + ((x-(view_wview[0]/2)) - view_xview[0]) * 0.1, 0, room_width - view_wview[0]);
+view_yview[0] = clamp(view_yview[0] + ((y-(view_hview[0]/2)) - view_yview[0]) * 0.1, 0, room_height - view_hview[0]);
 </string>
           </argument>
         </arguments>

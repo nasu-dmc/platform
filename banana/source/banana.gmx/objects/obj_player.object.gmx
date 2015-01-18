@@ -53,29 +53,6 @@ image_speed = 0.25;
         </arguments>
       </action>
     </event>
-    <event eventtype="2" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>xsp = 0;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -316,25 +293,25 @@ if (!place_meeting(x, y+1, obj_solid)&amp;&amp; (ysp &gt;= 7)) {
             <kind>1</kind>
             <string>///dmg
 
-if place_meeting(x-1,y,obj_enemy1)
+if place_meeting(x-2,y,obj_enemy1)
     {
-    xsp = 3;
-    alarm[0] = 7
+    instance_destroy();
+    action_create_object_motion(obj_playerdmg,x,y,8,0);
     }
 if place_meeting(x+2,y,obj_enemy1)
     {
-    xsp = -8;
-    alarm[0] = 7
+    instance_destroy();
+    action_create_object_motion(obj_playerdmg,x,y,-8,0);
     }
-if place_meeting(x-1,y,obj_enemy2)
+if place_meeting(x-2,y,obj_enemy2)
     {
-    xsp = 8;
-    alarm[0] = 7
+    instance_destroy();
+    action_create_object_motion(obj_playerdmg,x,y,8,0);
     }
 if place_meeting(x+2,y,obj_enemy2)
     {
-    xsp = -8
-    alarm[0] = 7
+    instance_destroy();
+    action_create_object_motion(obj_playerdmg,x,y,-8,0);
     }
 </string>
           </argument>
@@ -428,7 +405,7 @@ if (face = 0 &amp;&amp; jumps = 2 &amp;&amp; ysp = 0)
      action_create_object_motion(obj_playerattack,x,y,-5,0);     
     }
 
-if (ysp &gt; 1 || jumps &lt; 2)
+if (ysp &gt; 0 || ysp &lt; 0 || jumps &lt; 2)
     {
     instance_destroy();
      action_create_object_motion(obj_playerslam,x,y,-5,90);

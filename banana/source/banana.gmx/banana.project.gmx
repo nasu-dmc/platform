@@ -42,11 +42,15 @@
       <sprite>sprites\spr_debri1</sprite>
       <sprite>sprites\spr_debrimelt2</sprite>
     </sprites>
+    <sprite>sprites\spr_plume</sprite>
+    <sprite>sprites\spr_popup1</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_floortop</background>
     <background>background\bg_floor</background>
     <background>background\wall</background>
+    <background>background\wall2</background>
+    <background>background\wall3</background>
   </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
@@ -62,23 +66,24 @@
       <object>objects\obj_playerslammed</object>
       <object>objects\obj_playerdead</object>
       <object>objects\obj_playerslam</object>
+      <object>objects\obj_playerdmg</object>
     </objects>
     <object>objects\obj_enemy1</object>
     <object>objects\obj_start</object>
     <object>objects\obj_brief</object>
     <object>objects\obj_title</object>
     <object>objects\play</object>
-    <object>objects\obj_dmgfloor</object>
     <object>objects\obj_lvlexit</object>
     <objects name="environment">
       <object>objects\pasokon</object>
       <object>objects\obj_debrimelt2</object>
-      <object>objects\obj_enemy1dead</object>
       <object>objects\obj_debrimelt1</object>
       <object>objects\obj_debridmg</object>
       <object>objects\obj_debri1</object>
+      <object>objects\obj_dmgfloor</object>
     </objects>
     <object>objects\obj_core</object>
+    <object>objects\obj_enemy1dead</object>
     <object>objects\obj_deathblock</object>
     <object>objects\obj_infection</object>
     <object>objects\obj_movingplate</object>
@@ -86,20 +91,23 @@
     <object>objects\obj_enemy2</object>
     <object>objects\obj_nasu</object>
     <object>objects\obj_player_new</object>
+    <object>objects\obj_enemy2dead</object>
+    <object>objects\obj_plume2</object>
+    <object>objects\obj_plume1</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\level9</room>
+    <room>rooms\level10</room>
     <room>rooms\menu</room>
     <room>rooms\brief</room>
     <room>rooms\level1</room>
     <room>rooms\level2</room>
     <room>rooms\level3</room>
-    <room>rooms\level5</room>
     <room>rooms\level4</room>
-    <room>rooms\level7</room>
+    <room>rooms\level5</room>
     <room>rooms\level6</room>
+    <room>rooms\level7</room>
     <room>rooms\level8</room>
-    <room>rooms\level9</room>
-    <room>rooms\level10</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
