@@ -85,6 +85,7 @@
     <object>objects\obj_pasokon</object>
     <object>objects\obj_enemy2</object>
     <object>objects\obj_nasu</object>
+    <object>objects\obj_player_new</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\menu</room>
@@ -92,10 +93,10 @@
     <room>rooms\level1</room>
     <room>rooms\level2</room>
     <room>rooms\level3</room>
-    <room>rooms\level4</room>
     <room>rooms\level5</room>
-    <room>rooms\level6</room>
+    <room>rooms\level4</room>
     <room>rooms\level7</room>
+    <room>rooms\level6</room>
     <room>rooms\level8</room>
     <room>rooms\level9</room>
     <room>rooms\level10</room>
