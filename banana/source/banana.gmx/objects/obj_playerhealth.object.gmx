@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hp = 20
+            <string>hp = 30
 </string>
           </argument>
         </arguments>
@@ -53,7 +53,7 @@
     hp -=1;
     }
 
-if (hp &lt;= -1)
+if (hp &lt;= 0)
     {
     instance_destroy();
     }

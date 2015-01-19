@@ -203,24 +203,24 @@ y += ysp;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if distance_to_object(obj_player) &lt; 75
+            <string>if (distance_to_object(obj_player) &lt; 75)
     {
     chasing = true;
     }
 
 
 
-if (chasing =+ true)
-    sprite_index = enemy_1;
+if (chasing = true)    
     {
-    if instance_exists(obj_player) 
+    sprite_index = enemy_1;
+    if (instance_exists(obj_player)) 
         {
-        if x &lt; obj_player.x
+        if (x &lt; obj_player.x)
             {
             image_xscale = -1;
             xsp = 4;
             }
-        else if x &gt; obj_player.x
+        else if (x &gt; obj_player.x)
             {
             image_xscale = 1;
             xsp = -4;
@@ -237,17 +237,19 @@ if (chasing =+ true)
    
 
 if (hp &lt;= 0)
+    {
     instance_destroy();
+    }
     
 if(xsp = 0)
+    {
     sprite_index = enemy_1_idle;
+    }
     
 if instance_exists(obj_playerdmg)
     {
     xsp *= 0.5;
     }
-
-
 </string>
           </argument>
         </arguments>
