@@ -223,12 +223,12 @@ if (chasing = true)
         if (x &lt; obj_player.x)
             {
             image_xscale = -1;
-            xsp = 2.5;
+            xsp = 3;
             }
         else if (x &gt; obj_player.x)
             {
             image_xscale = 1;
-            xsp = -2.5;
+            xsp = -3;
             }
         }
         else {
