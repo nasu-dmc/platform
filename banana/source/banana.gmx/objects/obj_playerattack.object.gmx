@@ -275,6 +275,28 @@ if(image_xscale = -1)
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="obj_dmgfloor">
+      <action>
+        <libid>1</libid>
+        <id>104</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_set_vspeed</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>-1</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="obj_solid">
       <action>
         <libid>1</libid>

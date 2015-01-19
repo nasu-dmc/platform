@@ -47,6 +47,22 @@
     <sprite>sprites\spr_plume</sprite>
     <sprite>sprites\spr_nothing</sprite>
     <sprite>sprites\tryagain</sprite>
+    <sprites name="popups">
+      <sprite>sprites\spr_pop1</sprite>
+      <sprite>sprites\spr_pop2</sprite>
+      <sprite>sprites\spr_pop3</sprite>
+      <sprite>sprites\spr_pop4</sprite>
+      <sprite>sprites\spr_pop5</sprite>
+      <sprite>sprites\spr_pop6</sprite>
+      <sprite>sprites\spr_pop7</sprite>
+      <sprite>sprites\spr_pop8</sprite>
+      <sprite>sprites\spr_pop9</sprite>
+      <sprite>sprites\spr_pop10</sprite>
+      <sprite>sprites\spr_pop11</sprite>
+      <sprite>sprites\spr_pop12</sprite>
+      <sprite>sprites\spr_pop13</sprite>
+      <sprite>sprites\spr_pop14</sprite>
+    </sprites>
     <sprites name="playerhealth">
       <sprite>sprites\spr_100</sprite>
       <sprite>sprites\spr_80</sprite>
@@ -82,7 +98,6 @@
     </objects>
     <object>objects\obj_enemy1</object>
     <object>objects\obj_start</object>
-    <object>objects\obj_brief</object>
     <object>objects\obj_title</object>
     <object>objects\play</object>
     <object>objects\obj_lvlexit</object>
@@ -107,21 +122,50 @@
     <object>objects\obj_plume1</object>
     <object>objects\obj_playerhealth</object>
     <object>objects\obj_tryagain</object>
+    <objects name="popups">
+      <object>objects\obj_pop1</object>
+      <object>objects\obj_pop2</object>
+      <object>objects\obj_pop3</object>
+      <object>objects\obj_pop4</object>
+      <object>objects\obj_pop5</object>
+      <object>objects\obj_pop6</object>
+      <object>objects\obj_pop7</object>
+      <object>objects\obj_pop8</object>
+      <object>objects\obj_pop9</object>
+      <object>objects\obj_pop10</object>
+      <object>objects\obj_pop11</object>
+      <object>objects\obj_pop12</object>
+      <object>objects\obj_pop13</object>
+      <object>objects\obj_pop14</object>
+    </objects>
     <object>objects\obj_healthbar</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\menu</room>
-    <room>rooms\brief</room>
+    <room>rooms\pop1</room>
+    <room>rooms\pop2</room>
     <room>rooms\level1</room>
+    <room>rooms\pop3</room>
     <room>rooms\level2</room>
+    <room>rooms\pop4</room>
     <room>rooms\level3</room>
     <room>rooms\level4</room>
+    <room>rooms\pop5</room>
+    <room>rooms\pop6</room>
     <room>rooms\level5</room>
+    <room>rooms\pop7</room>
+    <room>rooms\pop8</room>
     <room>rooms\level6</room>
+    <room>rooms\pop9</room>
     <room>rooms\level7</room>
+    <room>rooms\pop10</room>
     <room>rooms\level8</room>
+    <room>rooms\pop11</room>
     <room>rooms\level9</room>
+    <room>rooms\pop12</room>
     <room>rooms\level10</room>
+    <room>rooms\pop13</room>
+    <room>rooms\pop14</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

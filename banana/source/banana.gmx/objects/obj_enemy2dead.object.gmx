@@ -25,7 +25,97 @@
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>///Initialize Variables
+grav = 0.5;
+ysp = 0;
+xsp= 0;
+jsp = 7;
+jumps = 1;
+hp = 30;
+
+
+
+
+
+
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>image_speed = 0.3;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+//Gravity
+if (ysp &lt; 10) {
+    ysp += grav;
+    if (ysp &gt; 1)
+        ysp *= 1.05;
+}; 
+
+
+//Horizontal Collision 
+if (place_meeting(x+xsp, y, obj_solid)) //if range between wall and player is less than speed 
+{
+    while(!(place_meeting(x+sign(xsp), y, obj_solid))) { //while not 1 pixel away from wall  
+        x += sign(xsp); //keep moving
+    }   
+    xsp = 0; //once not 1 pixel, stop
+    
+}
+
+
+//Vertical Collision 
+if (place_meeting(x, y+ysp, obj_solid)) //if range between solid and player is less than speed 
+{
+    while(!(place_meeting(x, y+sign(ysp), obj_solid))) { //until 1 pixel away 
+        y += sign(ysp); //keep moving up
+    }   
+    ysp = 0; //once not 1 pixel, stop
+}
+
+x += xsp;
+y += ysp; 
+
+
 </string>
           </argument>
         </arguments>
