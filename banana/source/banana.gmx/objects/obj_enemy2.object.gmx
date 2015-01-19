@@ -214,6 +214,7 @@ y += ysp;
 
 
 if (chasing == true)
+    sprite_index = enemy_2;
     {
     if instance_exists(obj_player)
         {
@@ -233,6 +234,9 @@ if (chasing == true)
 
 if (hp &lt;= 0)
     instance_destroy();
+    
+if(chasing = false)
+    sprite_index = enemy_2_idle;
 
 if instance_exists(obj_playerdmg)
     {
