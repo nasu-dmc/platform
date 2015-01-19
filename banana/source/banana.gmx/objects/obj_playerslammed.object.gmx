@@ -180,7 +180,7 @@ view_yview[0] = clamp(view_yview[0] + ((y-(view_hview[0]/2)) - view_yview[0]) * 
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>obj_player</object>
+            <object>obj_playermove</object>
           </argument>
           <argument>
             <kind>0</kind>

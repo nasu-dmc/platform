@@ -70,10 +70,11 @@
     <object>objects\obj_collide</object>
     <object>objects\obj_solid</object>
     <objects name="player">
+      <object>objects\obj_player</object>
+      <object>objects\obj_playerattack</object>
       <object>objects\obj_playerattack2</object>
       <object>objects\obj_playerattack3</object>
-      <object>objects\obj_playerattack</object>
-      <object>objects\obj_player</object>
+      <object>objects\obj_playermove</object>
       <object>objects\obj_playerslammed</object>
       <object>objects\obj_playerdead</object>
       <object>objects\obj_playerslam</object>

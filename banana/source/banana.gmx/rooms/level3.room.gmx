@@ -183,7 +183,7 @@
     <instance objName="obj_dmgfloor" x="672" y="352" name="inst_1D976EAC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dmgfloor" x="608" y="512" name="inst_6FE40581" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dmgfloor" x="768" y="608" name="inst_CC852459" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="928" y="224" name="inst_FF4062CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_playermove" x="928" y="224" name="inst_FF4062CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lvlexit" x="96" y="512" name="inst_5695D482" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="800" y="768" name="inst_6DE1C9D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="800" y="736" name="inst_228424BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

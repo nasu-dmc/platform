@@ -308,12 +308,12 @@ view_yview[0] = clamp(view_yview[0] + ((y-(view_hview[0]/2)) - view_yview[0]) * 
             <kind>1</kind>
             <string>if(image_xscale = 1)
     {
-     instance_create(x,y,obj_player);
+     instance_create(x,y,obj_playermove);
     }
 
 if(image_xscale = -1)
     {
-     instance_create(x,y,obj_player);
+     instance_create(x,y,obj_playermove);
     }
 </string>
           </argument>

@@ -95,7 +95,7 @@
     <instance objName="obj_solid" x="608" y="608" name="inst_62C7F248" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="576" y="608" name="inst_E00531EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="544" y="608" name="inst_29F4E928" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="64" y="352" name="inst_CBCD166E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_playermove" x="64" y="352" name="inst_CBCD166E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="704" y="608" name="inst_0CA3AA17" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="0" y="384" name="inst_3C0A008B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="0" y="352" name="inst_137A4DF0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
