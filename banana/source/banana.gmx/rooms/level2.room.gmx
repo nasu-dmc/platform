@@ -265,8 +265,7 @@
     <instance objName="obj_solid" x="928" y="384" name="inst_EB04EC28" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="960" y="384" name="inst_0FCAFA01" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="480" y="64" name="inst_123C7630" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_playerhealth" x="896" y="448" name="inst_C21BA574" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_healthbar" x="896" y="416" name="inst_139D8EA6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_playerhealth" x="896" y="416" name="inst_139D8EA6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_floor" x="800" y="256" w="32" h="32" xo="0" yo="0" id="10000513" name="inst_1C8DE1EA" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

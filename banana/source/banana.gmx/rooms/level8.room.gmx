@@ -221,8 +221,7 @@
     <instance objName="obj_enemy1" x="896" y="768" name="inst_F6031371" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy1" x="1440" y="768" name="inst_2CB519CB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy2" x="960" y="672" name="inst_7C69225A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_playerhealth" x="256" y="864" name="inst_6F2E555D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_healthbar" x="320" y="832" name="inst_5C62F1C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_playerhealth" x="320" y="832" name="inst_5C62F1C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_floortop" x="192" y="768" w="32" h="32" xo="32" yo="32" id="10008939" name="inst_9DED77B2" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

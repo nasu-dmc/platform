@@ -87,6 +87,7 @@
     <object>objects\obj_solid</object>
     <objects name="player">
       <object>objects\obj_player</object>
+      <object>objects\obj_playerhealth</object>
       <object>objects\obj_playerattack</object>
       <object>objects\obj_playerattack2</object>
       <object>objects\obj_playerattack3</object>
@@ -96,10 +97,7 @@
       <object>objects\obj_playerslam</object>
       <object>objects\obj_playerdmg</object>
     </objects>
-    <object>objects\obj_enemy1</object>
     <object>objects\obj_start</object>
-    <object>objects\obj_title</object>
-    <object>objects\play</object>
     <object>objects\obj_lvlexit</object>
     <objects name="environment">
       <object>objects\pasokon</object>
@@ -110,21 +108,25 @@
       <object>objects\obj_dmgfloor</object>
     </objects>
     <object>objects\obj_core</object>
-    <object>objects\obj_enemy1dead</object>
-    <object>objects\obj_deathblock</object>
-    <object>objects\obj_infection</object>
+    <objects name="enemy">
+      <object>objects\obj_enemy1</object>
+      <object>objects\obj_enemy2dead</object>
+      <object>objects\obj_deathblock</object>
+      <object>objects\obj_enemy1dead</object>
+      <object>objects\obj_infection</object>
+      <object>objects\obj_enemy2</object>
+    </objects>
     <object>objects\obj_movingplate</object>
     <object>objects\obj_pasokon</object>
-    <object>objects\obj_enemy2</object>
     <object>objects\obj_nasu</object>
-    <object>objects\obj_enemy2dead</object>
     <object>objects\obj_plume2</object>
     <object>objects\obj_plume1</object>
-    <object>objects\obj_playerhealth</object>
-    <object>objects\obj_tryagain</object>
     <objects name="popups">
+      <object>objects\obj_title</object>
       <object>objects\obj_pop1</object>
+      <object>objects\play</object>
       <object>objects\obj_pop2</object>
+      <object>objects\obj_tryagain</object>
       <object>objects\obj_pop3</object>
       <object>objects\obj_pop4</object>
       <object>objects\obj_pop5</object>
@@ -138,9 +140,9 @@
       <object>objects\obj_pop13</object>
       <object>objects\obj_pop14</object>
     </objects>
-    <object>objects\obj_healthbar</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\level5</room>
     <room>rooms\menu</room>
     <room>rooms\pop1</room>
     <room>rooms\pop2</room>
@@ -148,11 +150,10 @@
     <room>rooms\pop3</room>
     <room>rooms\level2</room>
     <room>rooms\pop4</room>
+    <room>rooms\pop5</room>
     <room>rooms\level3</room>
     <room>rooms\level4</room>
-    <room>rooms\pop5</room>
     <room>rooms\pop6</room>
-    <room>rooms\level5</room>
     <room>rooms\pop7</room>
     <room>rooms\pop8</room>
     <room>rooms\level6</room>

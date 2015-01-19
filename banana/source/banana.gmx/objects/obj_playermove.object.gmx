@@ -31,7 +31,7 @@ xsp = 0;
 ysp = 0;
 jsp = 7; //jump speed
 msp = 5; //move speed
-fric = 0.25 //friction
+fric = 0.32 //friction
 
 jumps = 0; 
 jumps_max = 2; 
@@ -356,7 +356,7 @@ if (!(instance_exists(obj_playerhealth))) {
         <exetype>1</exetype>
         <functionname>action_kill_object</functionname>
         <codestring></codestring>
-        <whoName>obj_playerhealth</whoName>
+        <whoName>&lt;undefined&gt;</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
       </action>
@@ -372,7 +372,7 @@ if (!(instance_exists(obj_playerhealth))) {
         <exetype>1</exetype>
         <functionname>action_kill_object</functionname>
         <codestring></codestring>
-        <whoName>obj_playerhealth</whoName>
+        <whoName>&lt;undefined&gt;</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
       </action>
@@ -388,7 +388,7 @@ if (!(instance_exists(obj_playerhealth))) {
         <exetype>1</exetype>
         <functionname>action_kill_object</functionname>
         <codestring></codestring>
-        <whoName>obj_playerhealth</whoName>
+        <whoName>&lt;undefined&gt;</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
       </action>
@@ -404,7 +404,7 @@ if (!(instance_exists(obj_playerhealth))) {
         <exetype>1</exetype>
         <functionname>action_kill_object</functionname>
         <codestring></codestring>
-        <whoName>obj_playerhealth</whoName>
+        <whoName>&lt;undefined&gt;</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
       </action>
